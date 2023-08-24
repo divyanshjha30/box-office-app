@@ -1,4 +1,4 @@
-import { useLayoutEffect, useRef } from 'react';
+import { useRef } from 'react';
 import { styled } from 'styled-components';
 import { SearchCard, SearchImgWrapper } from '../common/SearchCard';
 import { StarIcon } from '../common/StarIcon';
@@ -15,14 +15,13 @@ const ShowCard = ({ name, image, id, summary, onStarMeClick, isStarred }) => {
 
     const starBtnRefEl = starBtnRef.current;
 
-    if(!starBtnRef) return;
-    if(isStarred) {
+    if (!starBtnRef) return;
+    if (isStarred) {
       starBtnRefEl.classList.remove('animate');
     } else {
       starBtnRefEl.classList.add('animate');
-
     }
-  }
+  };
 
   return (
     <SearchCard>
@@ -38,11 +37,7 @@ const ShowCard = ({ name, image, id, summary, onStarMeClick, isStarred }) => {
         <a href={`/show/${id}`} target="_blank" rel="noreferrer">
           Read more
         </a>
-        <StarBtn
-          ref={starBtnRef}
-          type="button"
-          onClick={handleStarClick}
-        >
+        <StarBtn ref={starBtnRef} type="button" onClick={handleStarClick}>
           <StarIcon active={isStarred} />
         </StarBtn>
       </ActionSection>
