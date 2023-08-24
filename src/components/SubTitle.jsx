@@ -3,7 +3,7 @@ import { styled, keyframes } from 'styled-components';
 export default function AppTitle() {
   return (
     <p>
-      <ThreeDText>By Divyansh Jha</ThreeDText>
+      <ThreeDText>By ~ Divyansh Jha</ThreeDText>
     </p>
   );
 }
@@ -28,8 +28,8 @@ const ThreeDText = styled.div`
   color: #46c4fa;
   white-space: nowrap;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 10%;
+  left: 80%;
   transform: translate(-50%, -50%);
   font-size: 3em;
   font-family: sans-serif;
