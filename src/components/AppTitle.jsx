@@ -1,7 +1,7 @@
 import { styled, keyframes } from 'styled-components';
 
 export default function AppTitle(props) {
-  const { title = 'Find Your Content', subTitle = 'BY ~ DIVYANSH' } = props;
+  const { title = 'BOX OFFICE', subTitle = 'BY ~ DIVYANSH' } = props;
 
   return (
     <TitleWrapper>
@@ -33,16 +33,16 @@ const TitleWrapper = styled.div`
     /* color: ${({ theme }) => theme.mainColors.dark}; */
     margin: 0;
     background: linear-gradient(
-    to right,
-    #7953cd 20%,
-    #00affa 30%,
-    #0190cd 70%,
-    #764ada 80%
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent; /* Use color to control the text color */
-  background-size: 500% auto;
-  animation: ${textShineAnimation} 5s ease-in-out infinite alternate;
+      to right,
+      #7953cd 20%,
+      #00affa 30%,
+      #0190cd 70%,
+      #764ada 80%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; /* Use color to control the text color */
+    background-size: 500% auto;
+    animation: ${textShineAnimation} 5s ease-in-out infinite alternate;
   }
 `;
