@@ -1,7 +1,7 @@
 import { styled, keyframes } from 'styled-components';
 
 export default function AppTitle(props) {
-  const { title = 'Box Office', subTitle = 'BY ~ DIVYANSH' } = props;
+  const { title = 'Find Your App', subTitle = 'BY ~ DIVYANSH' } = props;
 
   return (
     <TitleWrapper>
